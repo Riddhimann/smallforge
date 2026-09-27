@@ -1,0 +1,150 @@
+{
+  "benchmark_name": "smallforge-core-synthetic",
+  "benchmark_version": "1.0.0",
+  "baseline_variant": "baseline",
+  "synthetic": false,
+  "notes": [
+    "Same model, seed, benchmark tasks, and host were used for paired variants.",
+    "The benchmark data are synthetic; inference was performed by the configured real model."
+  ],
+  "comparisons": [
+    {
+      "variant": "full",
+      "common_task_count": 20,
+      "deltas": {
+        "task_accuracy": {
+          "metric": "task_accuracy",
+          "baseline_value": 0.3,
+          "candidate_value": 0.6,
+          "absolute_delta": 0.3,
+          "relative_delta_percent": 100.0,
+          "sample_size": 20,
+          "ci_low": -0.05,
+          "ci_high": 0.6,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "schema_validity": {
+          "metric": "schema_validity",
+          "baseline_value": 0.75,
+          "candidate_value": 1.0,
+          "absolute_delta": 0.25,
+          "relative_delta_percent": 33.33333333333333,
+          "sample_size": 4,
+          "ci_low": 0.0,
+          "ci_high": 0.75,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "tool_selection_accuracy": {
+          "metric": "tool_selection_accuracy",
+          "baseline_value": 0.0,
+          "candidate_value": 0.8116666666666668,
+          "absolute_delta": 0.8116666666666668,
+          "relative_delta_percent": null,
+          "sample_size": 20,
+          "ci_low": 0.6783333333333333,
+          "ci_high": 0.9199999999999999,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "tool_argument_accuracy": {
+          "metric": "tool_argument_accuracy",
+          "baseline_value": 0.0,
+          "candidate_value": 0.55,
+          "absolute_delta": 0.55,
+          "relative_delta_percent": null,
+          "sample_size": 20,
+          "ci_low": 0.325,
+          "ci_high": 0.75,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "groundedness": {
+          "metric": "groundedness",
+          "baseline_value": 0.25,
+          "candidate_value": 0.75,
+          "absolute_delta": 0.5,
+          "relative_delta_percent": 200.0,
+          "sample_size": 8,
+          "ci_low": -0.125,
+          "ci_high": 1.0,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "citation_precision": {
+          "metric": "citation_precision",
+          "baseline_value": 0.25,
+          "candidate_value": 0.75,
+          "absolute_delta": 0.5,
+          "relative_delta_percent": 200.0,
+          "sample_size": 8,
+          "ci_low": 0.0,
+          "ci_high": 0.875,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "citation_recall": {
+          "metric": "citation_recall",
+          "baseline_value": 0.0,
+          "candidate_value": 0.8333333333333334,
+          "absolute_delta": 0.8333333333333334,
+          "relative_delta_percent": null,
+          "sample_size": 6,
+          "ci_low": 0.5,
+          "ci_high": 1.0,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "abstention_accuracy": {
+          "metric": "abstention_accuracy",
+          "baseline_value": 1.0,
+          "candidate_value": 0.5,
+          "absolute_delta": -0.5,
+          "relative_delta_percent": -50.0,
+          "sample_size": 2,
+          "ci_low": -1.0,
+          "ci_high": 0.0,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "verification_accuracy": {
+          "metric": "verification_accuracy",
+          "baseline_value": 0.75,
+          "candidate_value": 0.5,
+          "absolute_delta": -0.25,
+          "relative_delta_percent": -33.33333333333333,
+          "sample_size": 4,
+          "ci_low": -0.75,
+          "ci_high": 0.0,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "retry_count": {
+          "metric": "retry_count",
+          "baseline_value": 0.0,
+          "candidate_value": 0.8,
+          "absolute_delta": 0.8,
+          "relative_delta_percent": null,
+          "sample_size": 20,
+          "ci_low": 0.5,
+          "ci_high": 1.1012500000000047,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        },
+        "latency_ms": {
+          "metric": "latency_ms",
+          "baseline_value": 1511.840989999473,
+          "candidate_value": 12944.376089995785,
+          "absolute_delta": 11432.535099996312,
+          "relative_delta_percent": 756.1995722844039,
+          "sample_size": 20,
+          "ci_low": 8955.565620248199,
+          "ci_high": 13986.483512624292,
+          "confidence": 0.95,
+          "interval_method": "paired bootstrap percentile"
+        }
+      }
+    }
+  ]
+}

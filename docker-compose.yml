@@ -1,0 +1,17 @@
+services:
+  smallforge:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SMALLFORGE_OLLAMA_URL: http://host.docker.internal:11434
+      SMALLFORGE_DEFAULT_MODEL: ${SMALLFORGE_DEFAULT_MODEL:-ollama:qwen2.5:3b}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - smallforge-data:/app/data
+      - ./results:/app/results
+    restart: unless-stopped
+
+volumes:
+  smallforge-data:

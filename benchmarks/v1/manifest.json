@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "name": "smallforge-core-synthetic",
+  "version": "1.0.0",
+  "description": "Compact synthetic tasks for comparing a standalone small model with bounded harness variants.",
+  "tasks_file": "tasks.jsonl",
+  "task_count": 20,
+  "synthetic": true,
+  "created": "2026-08-15",
+  "categories": {
+    "arithmetic": 4,
+    "read_only_sql": 4,
+    "retrieval": 4,
+    "structured_extraction": 4,
+    "unanswerable": 2,
+    "verification": 2
+  },
+  "data_provenance": "All entities, documents, tables, amounts, policies, and labels were authored for SmallForge and are fictional.",
+  "intended_use": [
+    "Local development",
+    "Harness ablation experiments",
+    "Regression testing of tool and validation behaviour"
+  ],
+  "not_intended_use": [
+    "Production model certification",
+    "Safety certification",
+    "Comparison with unpublished or differently versioned benchmarks"
+  ],
+  "primary_metrics": [
+    "task_accuracy",
+    "schema_validity",
+    "tool_selection_accuracy",
+    "tool_argument_accuracy",
+    "groundedness",
+    "abstention_accuracy",
+    "verification_accuracy",
+    "retry_count",
+    "latency_ms"
+  ]
+}
