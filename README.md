@@ -157,16 +157,3 @@ Copy `.env.example` or set environment variables in your shell:
 
 Secrets are read from the environment and are not stored in experiment records.
 
-## Citi interview preparation
-
-The project demonstrates Python, SQL, RAG-style retrieval, GenAI/agent design, FastAPI, prompt and
-schema engineering, validation, experimental comparison, visualization, and communicating business
-trade-offs. The optional Google ADK bridge is installed with:
-
-```powershell
-python -m pip install -e ".[adk]"
-```
-
-It exposes SmallForge's bounded tools as ADK function tools but was not used for the published
-result. That provenance distinction is intentional. Use the [interview guide](docs/interview-guide.md)
-for the two-minute explanation, design trade-offs, likely follow-ups, and honest resume wording.
